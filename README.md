@@ -1,3 +1,5 @@
+MAP WITH **ANY** SLIDER WILL NOT WORK
+
 HOW TO USE:
 
 `dotnet run -- {map id} {sample Rate}`
