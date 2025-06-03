@@ -25,15 +25,22 @@ public class FourrierEvaluator
 
     private ProbabilityOfHit SampleAt(MilliSeconds time)
         => map.HitObjects
-        .Select(a => a is Spinner ? 0d : NormalDistribution(time, a.StartTime, a.HitWindows.WindowFor(HitResult.Great)))
+        .Select(a => a is Spinner ? 0d : NormalDistribution(time, a.StartTime, GetHitWindow(a)))
         .Sum();
+
+    private MilliSeconds GetHitWindow(HitObject pObject)
+    {
+        if (pObject is Slider lSlider) return lSlider.HeadCircle.HitWindows.WindowFor(HitResult.Great);
+
+        return pObject.HitWindows.WindowFor(HitResult.Great);
+    }
 
     private IEnumerable<ProbabilityOfHit> SamplePoints(MilliSeconds interval)
     {
         MilliSeconds time = 0;
+
         while (true)
         {
-            Console.WriteLine($"sampleAt {time}");
             yield return SampleAt(time);
             time += interval;
         }
