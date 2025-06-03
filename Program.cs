@@ -1,9 +1,5 @@
 ﻿using System;
 
-using osu.NET.Authorization;
-using osu.NET.Models.Scores;
-using osu.NET;
-
 using osu.Game.Rulesets.Osu;
 using osu.Game.Rulesets.Osu.Beatmaps;
 using osu.Game.Rulesets.Osu.Objects;
@@ -21,15 +17,10 @@ namespace FourrierRhythm;
 public class EntryPoint
 {
 
-    private static OsuApiClient api = null!;
-
     static readonly HttpClient client = new();
 
     public static async Task Main(params string[] args)
     {
-        Console.WriteLine("InitializingApi");
-
-        InitApi(args[0], args[1]);
 
         Beatmap beatmap = await GetBeatmap(int.Parse(args[2]));
 
@@ -50,18 +41,8 @@ public class EntryPoint
 
         plot.Add.Signal(dft.GetMagnetudeOfCos().ToArray());
 
-        plot.SavePng($"{newBeatmap.BeatmapInfo.BeatmapSet.Metadata.Title}_{newBeatmap.BeatmapInfo.DifficultyName}.png", 1920, 1080);
+        plot.SavePng($"{newBeatmap.BeatmapInfo.Metadata.Title}_{newBeatmap.BeatmapInfo.DifficultyName}.png", 1920, 1080);
 
-    }
-
-
-    public static void InitApi(string ClientId, string secret)
-    {
-        OsuClientAccessTokenProvider provider = new(ClientId, secret);
-
-        OsuApiClientOptions options = new();
-
-        api = new(provider, options, null);
     }
 
     public static async Task<Beatmap> GetBeatmap(int id)
