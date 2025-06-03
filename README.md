@@ -7,3 +7,4 @@ HOW TO USE:
 this will outputs a graph in the same directory
 
 the Sample Rate will be the preciseness of the graph
+you can put like 2/3 times the object count
