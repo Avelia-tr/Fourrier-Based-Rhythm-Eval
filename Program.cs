@@ -21,9 +21,6 @@ namespace FourrierRhythm;
 public class EntryPoint
 {
 
-    const string ClientId = "40985";
-    const string secret = "oZqoGMqTUnnq4jrOBhVlB7jtrWRgGzoLJJnGKOsQ";
-
     private static OsuApiClient api = null!;
 
     static readonly HttpClient client = new();
@@ -32,9 +29,9 @@ public class EntryPoint
     {
         Console.WriteLine("InitializingApi");
 
-        InitApi(ClientId, secret);
+        InitApi(args[0], args[1]);
 
-        Beatmap beatmap = await GetBeatmap(int.Parse(args[0]));
+        Beatmap beatmap = await GetBeatmap(int.Parse(args[2]));
 
         var converter = new OsuBeatmapConverter(beatmap, new OsuRuleset());
 
@@ -47,7 +44,7 @@ public class EntryPoint
 
         FourrierEvaluator evaluator = new(newBeatmap!);
 
-        DiscreteFourrierTransfom dft = evaluator.DoFourrierTransform(int.Parse(args[1]));
+        DiscreteFourrierTransfom dft = evaluator.DoFourrierTransform(int.Parse(args[3]));
 
         var plot = new ScottPlot.Plot();
 
