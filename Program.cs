@@ -22,7 +22,7 @@ public class EntryPoint
     public static async Task Main(params string[] args)
     {
 
-        Beatmap beatmap = await GetBeatmap(int.Parse(args[2]));
+        Beatmap beatmap = await GetBeatmap(int.Parse(args[0]));
 
         var converter = new OsuBeatmapConverter(beatmap, new OsuRuleset());
 
@@ -35,7 +35,7 @@ public class EntryPoint
 
         FourrierEvaluator evaluator = new(newBeatmap!);
 
-        DiscreteFourrierTransfom dft = evaluator.DoFourrierTransform(int.Parse(args[3]));
+        DiscreteFourrierTransfom dft = evaluator.DoFourrierTransform(int.Parse(args[1]));
 
         var plot = new ScottPlot.Plot();
 
