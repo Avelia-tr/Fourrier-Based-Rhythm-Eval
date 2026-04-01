@@ -4,5 +4,6 @@ HOW TO USE:
 
 this will outputs a graph in the same directory
 
-the Sample Rate will be the preciseness of the graph
-you can put like 2/3 times the object count
+sample rate should probably be no more than 10 for performance purposes but don't hesitate to push it !
+
+thanks misha for the contribution math wise of the last version :3

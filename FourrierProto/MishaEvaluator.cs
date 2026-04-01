@@ -20,7 +20,7 @@ public class MishaEvaluator
 
         bpm = map.HitObjects
             .Skip(1)
-            .Select((x, y) => hit_objects[y - 1].StartTime - x.StartTime)
+            .Select((x, y) => hit_objects[y].StartTime - x.StartTime)
             .Order()
             .ElementAt(hit_objects.Count / 2);
     }
