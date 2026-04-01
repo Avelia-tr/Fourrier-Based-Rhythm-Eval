@@ -9,6 +9,7 @@ using ProbabilityOfHit = double;
 
 namespace FourrierRhythm.Evaluator;
 
+[Obsolete("this is the old evaluator here for history")]
 public class FourrierEvaluator
 {
     IBeatmap map;

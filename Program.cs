@@ -33,24 +33,12 @@ public class EntryPoint
             hitobject.ApplyDefaults(newBeatmap.ControlPointInfo, newBeatmap.Difficulty);
         }
 
-        FourrierEvaluator evaluator = new(newBeatmap!);
+        var evaluator = new MishaEvaluator(newBeatmap);
+        var sampleRate = int.Parse(args[1]);
 
-        DiscreteFourrierTransfom dft = evaluator.DoFourrierTransform(int.Parse(args[1]));
+        var rhythm_complexity = evaluator.Evaluate(sampleRate);
 
-        Console.WriteLine("finished doing fourrier transform");
-        Console.WriteLine("getting the magnetude");
-
-        double[] data = dft.GetMagnetudeOfCos().ToArray();
-
-        Console.WriteLine("writing file");
-
-        var plot = new ScottPlot.Plot();
-
-        plot.Add.Signal(data);
-
-        plot.SavePng($"{newBeatmap.BeatmapInfo.Metadata.Title}_{newBeatmap.BeatmapInfo.DifficultyName}.png", 1920, 1080);
-
-        Console.WriteLine($"file saved at {$"{newBeatmap.BeatmapInfo.Metadata.Title}_{newBeatmap.BeatmapInfo.DifficultyName}.png"}");
+        Console.WriteLine($"result is {rhythm_complexity}");
 
     }
 
