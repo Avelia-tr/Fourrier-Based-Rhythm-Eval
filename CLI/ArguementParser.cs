@@ -118,7 +118,7 @@ public record PlayerOption(int PlayerId) : arguementOption;
 public record MapOption(int MapId) : arguementOption;
 public record MapSetOption(int MapSetId) : arguementOption;
 public record FolderOption(string FolderName) : arguementOption;
-public record TextFileOption(string FolderName) : arguementOption;
+public record TextFileOption(string FileName) : arguementOption;
 public record OutputOption(string FolderName) : arguementOption;
 
 

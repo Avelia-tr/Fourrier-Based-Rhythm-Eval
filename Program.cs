@@ -2,10 +2,7 @@
 
 using osu.Game.Rulesets.Osu;
 using osu.Game.Rulesets.Osu.Beatmaps;
-using osu.Game.Rulesets.Osu.Objects;
-using osu.Game.Beatmaps.Formats;
 using osu.Game.Beatmaps;
-using osu.Game.IO;
 
 using ScottPlot;
 
@@ -22,16 +19,7 @@ public class EntryPoint
     public static async Task Main(params string[] args)
     {
 
-        Beatmap beatmap = await GetBeatmap(int.Parse(args[0]));
-
-        var converter = new OsuBeatmapConverter(beatmap, new OsuRuleset());
-
-        var newBeatmap = converter.Convert();
-
-        foreach (var hitobject in newBeatmap.HitObjects)
-        {
-            hitobject.ApplyDefaults(newBeatmap.ControlPointInfo, newBeatmap.Difficulty);
-        }
+        var newBeatmap = await OSUAPI.GetBeatmap(int.Parse(args[0]));
 
         var evaluator = new MishaEvaluator(newBeatmap);
         var sampleRate = int.Parse(args[1]);

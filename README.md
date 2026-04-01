@@ -23,3 +23,6 @@ goals of arguement to add for dev purposes :
     parse a file and outputs every 
  -o output_name
     output place if not precised print everything to terminal
+
+after that
+ variadic number of argument
