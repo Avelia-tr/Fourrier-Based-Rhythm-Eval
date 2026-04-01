@@ -18,6 +18,12 @@ public static class ArguementParser
             ApplyParser(ParsePlayer, argQueue, listArgs);
             ApplyParser(ParseTextFile, argQueue, listArgs);
             ApplyParser(ParseOutput, argQueue, listArgs);
+
+            if (!argQueue.Any()) break;
+
+            if (argQueue.Peek()[0] == '-') continue;
+
+            Console.WriteLine($"flushing unrecognized token {argQueue.Dequeue()}");
         }
 
         return listArgs.ToArray();
