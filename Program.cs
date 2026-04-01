@@ -14,19 +14,11 @@ namespace FourrierRhythm;
 public class EntryPoint
 {
 
-    static readonly HttpClient client = new();
-
     public static async Task Main(params string[] args)
     {
+        var parsed_args = ArguementParser.ParseArgs(args);
 
-        var newBeatmap = await OSUAPI.GetBeatmap(int.Parse(args[0]));
-
-        var evaluator = new MishaEvaluator(newBeatmap);
-        var sampleRate = int.Parse(args[1]);
-
-        var rhythm_complexity = evaluator.Evaluate(sampleRate);
-
-        Console.WriteLine($"result is {rhythm_complexity}");
+        await FourrierRhythmApp.DoLogic(parsed_args);
     }
 
 }

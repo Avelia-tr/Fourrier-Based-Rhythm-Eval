@@ -20,6 +20,7 @@ public static class OSUAPI
     {
         if (IsSetup) return;
 
+        Console.WriteLine("reading key from files");
         var file = File.ReadLines(API_FILES);
 
         OsuClientAccessTokenProvider provider = new(file.First(), file.Skip(1).First());
@@ -86,6 +87,7 @@ public static class OSUAPI
 
     public static async Task<IEnumerable<int>> GetBeamapSet(int id)
     {
+        if (!IsSetup) Setup();
         var ids_result = (await clientOSU.GetBeatmapSetAsync(id)).Value!;
 
         return ids_result.Beatmaps?.Select(x => x.Id) ?? Enumerable.Empty<int>();
@@ -93,6 +95,8 @@ public static class OSUAPI
 
     public static async Task<IEnumerable<int>> GetTopPlaysId(int Player_id)
     {
+        if (!IsSetup) Setup();
+
         var ids_result = (await clientOSU
                 .GetUserScoresAsync(
                     Player_id,

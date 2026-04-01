@@ -18,6 +18,11 @@ public static class ArguementParser
             ApplyParser(ParsePlayer, argQueue, listArgs);
             ApplyParser(ParseTextFile, argQueue, listArgs);
             ApplyParser(ParseOutput, argQueue, listArgs);
+
+
+            if (!argQueue.Any()) break;
+            var flushing_token = argQueue.Dequeue();
+            Console.WriteLine($"flushing Unrecognized token : {flushing_token}");
         }
 
         return listArgs.ToArray();
@@ -25,6 +30,7 @@ public static class ArguementParser
 
     static void ApplyParser(Func<Queue<string>, arguementOption?> parser, Queue<string> queue, List<arguementOption> result)
     {
+        if (!queue.Any()) return;
         var res = parser(queue);
         if (res is not null) result.Add(res);
     }
@@ -84,7 +90,7 @@ public static class ArguementParser
 
     static arguementOption? ParseMapSet(Queue<string> args)
     {
-        if (!FitMapArgs(args.Peek())) return null;
+        if (!FitMapSetArgs(args.Peek())) return null;
         args.Dequeue();
         return new MapSetOption(int.Parse(args.Dequeue()));
     }

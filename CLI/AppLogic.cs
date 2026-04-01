@@ -6,35 +6,45 @@ using osu.Game.Beatmaps;
 using System.Threading.Tasks;
 
 
-public static class App
+public static class FourrierRhythmApp
 {
-    static string? outputFile;
 
     const int SAMPLE_RATE = 5;
 
-    static async Task DoLogic(arguementOption[] args)
+    public static async Task DoLogic(arguementOption[] args)
     {
         var SetUp = args.GetArg<SetUpOption>();
         if (SetUp is not null) OSUAPI.SetUp(SetUp);
 
         // will do the simpler thing rn
-        outputFile = args.GetArg<OutputOption>()?.FolderName;
+        var outputFile = args.GetArg<OutputOption>();
 
         var result = new List<MapResult[]>();
 
         foreach (var arg in args)
         {
             if (arg.ShouldBeSkipped()) continue;
+            Console.WriteLine($"Doing {arg}");
 
-            result.Add(await arg.Process());
+            var mapResults = await arg.Process();
+            result.Add(mapResults);
         }
+
+        var flatResult = result.SelectMany(x => x).OrderBy(x => x.rhythm).ToArray();
+
+        foreach (var res in flatResult)
+        {
+            Console.WriteLine($"rating : {res.rhythm} | ID : {res.info.OnlineID} | bpm : {res.info.BPM} | Name : {res.info.Metadata.Title} - {res.info.DifficultyName}");
+        }
+
+        if (outputFile is not null) WriteResultToFile(outputFile, flatResult);
     }
 
     static bool ShouldBeSkipped(this arguementOption arg)
         => arg is SetUpOption or OutputOption;
 
     static T? GetArg<T>(this arguementOption[] args) where T : arguementOption
-        => (T)args.First(x => x is T);
+        => (T?)args.FirstOrDefault(x => x is T);
 
     static async Task<MapResult[]> Process(this arguementOption arg)
         => arg switch
@@ -134,8 +144,21 @@ public static class App
 
         var rhythm_complexity = evaluator.Evaluate(SAMPLE_RATE);
 
-        return new MapResult(rhythm_complexity, beatmap.Metadata);
+        return new MapResult(rhythm_complexity, beatmap.BeatmapInfo);
+    }
+
+    static void WriteResultToFile(OutputOption outputfile, MapResult[] results)
+    {
+        using FileStream stream = new FileStream(outputfile.FolderName, FileMode.Create, FileAccess.Write);
+
+        foreach (var res in results)
+        {
+            var data = System.Text.Encoding.Default.GetBytes($"rating : {res.rhythm} |ID : {res.info.OnlineID}| stars : {res.info.StarRating} | bpm : {res.info.BPM} | Name : {res.info.Metadata.Title} - {res.info.DifficultyName}");
+
+            stream.Write(data);
+        }
+
     }
 }
 
-public record MapResult(double rhythm, BeatmapMetadata Metadata);
+public record MapResult(double rhythm, BeatmapInfo info);
