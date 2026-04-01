@@ -102,8 +102,9 @@ public static class OSUAPI
                     Player_id,
                     osu.NET.Enums.UserScoreType.Best,
                     false,
-                    false
-                    , osu.NET.Enums.Ruleset.Osu)
+                    false,
+                    osu.NET.Enums.Ruleset.Osu,
+                    200)
                 ).Value!;
 
         return ids_result?.Select(x => x.BeatmapId) ?? Enumerable.Empty<int>();

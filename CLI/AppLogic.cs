@@ -153,7 +153,7 @@ public static class FourrierRhythmApp
 
         foreach (var res in results)
         {
-            var data = System.Text.Encoding.Default.GetBytes($"rating : {res.rhythm} |ID : {res.info.OnlineID}| stars : {res.info.StarRating} | bpm : {res.info.BPM} | Name : {res.info.Metadata.Title} - {res.info.DifficultyName}");
+            var data = System.Text.Encoding.Default.GetBytes($"rating : {res.rhythm} |ID : {res.info.OnlineID}| Name : {res.info.Metadata.Title} - {res.info.DifficultyName}\n");
 
             stream.Write(data);
         }
