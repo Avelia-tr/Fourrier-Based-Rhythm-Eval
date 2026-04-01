@@ -39,15 +39,7 @@ public class EntryPoint
         var rhythm_complexity = evaluator.Evaluate(sampleRate);
 
         Console.WriteLine($"result is {rhythm_complexity}");
-
     }
 
-    public static async Task<Beatmap> GetBeatmap(int id)
-    {
-        using Stream stream = await client.GetStreamAsync($"https://osu.ppy.sh/osu/{id}");
-        using LineBufferedReader reader = new LineBufferedReader(stream);
-
-        return Decoder.GetDecoder<Beatmap>(reader).Decode(reader);
-    }
 }
 
