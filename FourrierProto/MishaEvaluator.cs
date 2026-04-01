@@ -10,7 +10,7 @@ public class MishaEvaluator
 {
 
     IBeatmap map;
-    double bpm;
+    double medianTimeDist;
 
     public MishaEvaluator(IBeatmap pSubject)
     {
@@ -18,44 +18,33 @@ public class MishaEvaluator
 
         var hit_objects = map.HitObjects;
 
-        bpm = map.HitObjects
+        medianTimeDist = map.HitObjects
             .Skip(1)
             .Select((x, y) => hit_objects[y].StartTime - x.StartTime)
             .Order()
             .ElementAt(hit_objects.Count / 2);
     }
 
-    public Complex FourrierRegularMap(double x)
-        => 1 - Complex.Exp(Complex.ImaginaryOne * x * bpm * map.HitObjects.Count)
-        / 1 - Complex.Exp(Complex.ImaginaryOne * x * bpm);
-
-    public Complex FourrierMap(double x)
-    {
-        var first_object = map.HitObjects.First().StartTime;
-
-        return map.HitObjects.Select(hit_object => Complex.Exp(Complex.ImaginaryOne * x * (hit_object.StartTime - first_object)))
-            .Aggregate((a, b) => a + b);
-    }
-
     public double Evaluate(int IntegralSampleRate)
     {
-        var true_sample_rate = IntegralSampleRate * map.HitObjects.Count;
-        var step = 2 * MathF.PI / (true_sample_rate);
+        var times = map.HitObjects.Select(h => h.StartTime).ToArray();
+        double sum = 0.0;
 
-        var points = Enumerable.Range(0, true_sample_rate)
-            .Select(x => x * step)
-            .Select(x => (FourrierMap(x / bpm) - FourrierRegularMap(x / bpm)).Magnitude)
-            .Select(x => x * x)
-            .ToArray();
-
-        var results = 0d;
-
-        for (int i = 1; i < points.Length; i++)
+        for (int n = 1; n < times.Length; n++)           // n > m
         {
-            results += (points[i - 1] + points[i]) / 2d * step;
+            for (int m = 0; m < n; m++)                 // m < n
+            {
+                double delta_t = times[n] - times[m];
+                double smear = -double.Exp(-(delta_t / medianTimeDist) * (delta_t / medianTimeDist) / 2);
+                double add = (double.Sin(2 * MathF.PI * delta_t / medianTimeDist) / delta_t) * smear;
+                add *= add;
+                sum += add;
+            }
         }
 
-        return results;
+        sum = sum * (medianTimeDist * medianTimeDist / map.HitObjects.Count) * 10;
 
+
+        return sum;
     }
 }
