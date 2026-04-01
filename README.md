@@ -1,14 +1,10 @@
 HOW TO USE:
 
-`dotnet run -- {map id} {sample Rate}`
+`dotnet run -- args_listed_below`
 
-this will outputs a graph in the same directory
-
-sample rate should probably be no more than 10 for performance purposes but don't hesitate to push it !
+this supports multiple arguement but each arguement support only 1 sub_arguement (unless precised so)
 
 thanks misha for the contribution math wise of the last version :3
-
-goals of arguement to add for dev purposes :
  -s Api_id Api_secret
     creates a file storing the apikey/secret
  -m map_id
@@ -24,5 +20,5 @@ goals of arguement to add for dev purposes :
  -o output_name
     output place if not precised print everything to terminal
 
-after that
+current goals :
  variadic number of argument
