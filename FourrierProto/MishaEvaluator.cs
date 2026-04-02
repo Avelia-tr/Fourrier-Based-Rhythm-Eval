@@ -20,7 +20,7 @@ public class MishaEvaluator
 
         medianTimeDist = map.HitObjects
             .Skip(1)
-            .Select((x, y) => hit_objects[y].StartTime - x.StartTime)
+            .Select((x, y) => GetDeltas(hit_objects[y], x))
             .Order()
             .ElementAt(hit_objects.Count / 2);
     }
@@ -46,5 +46,12 @@ public class MishaEvaluator
 
 
         return sum;
+    }
+
+    public double GetDeltas(HitObject from, HitObject to)
+    {
+        if (from is Slider from_slider)
+            return to.StartTime - from_slider.EndTime;
+        return to.StartTime - from.StartTime;
     }
 }
