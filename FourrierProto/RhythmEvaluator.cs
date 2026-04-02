@@ -19,14 +19,12 @@ public class FourrierEvaluator
         map = pSubject;
     }
 
-    public ProbabilityOfHit NormalDistribution(MilliSeconds time, MilliSeconds noteTime, MilliSeconds timingWindow)
-        => (1 / timingWindow * MathF.Sqrt(MathF.Tau)) * double.Pow(MathF.E, -double.Pow((time - noteTime), 2d) / (2 * timingWindow * timingWindow));
 
     // extract rhythm of a section
 
     private ProbabilityOfHit SampleAt(MilliSeconds time)
         => map.HitObjects
-        .Select(a => a is Spinner ? 0d : NormalDistribution(time, a.StartTime, GetHitWindow(a)))
+        .Select(a => a is Spinner ? 0d : MathUtils.NormalDistribution(time, a.StartTime, GetHitWindow(a)))
         .Sum();
 
     private MilliSeconds GetHitWindow(HitObject pObject)
@@ -55,7 +53,4 @@ public class FourrierEvaluator
     // get top X rhythm ?
 
     // win ?
-
-
-
 }

@@ -32,3 +32,9 @@ public class DiscreteFourrierTransfom
     public IEnumerable<double> GetMagnetudeOfCos()
         => DFTResult.Select(a => Complex.Abs(a));
 }
+
+public static class MathUtils
+{
+    public static double NormalDistribution(double time, double noteTime, double timingWindow)
+        => (1 / timingWindow * MathF.Sqrt(MathF.Tau)) * double.Pow(MathF.E, -double.Pow((time - noteTime), 2d) / (2 * timingWindow * timingWindow));
+}
