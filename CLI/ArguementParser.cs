@@ -23,9 +23,10 @@ public static class ArguementParser
 
             if (argQueue.Peek()[0] == '-') continue;
 
-            Console.WriteLine($"flushing unrecognized token {argQueue.Dequeue()}");
+            Console.WriteLine($"flushing unrecognized token : {argQueue.Dequeue()}");
         }
 
+        Console.WriteLine($"parsed {listArgs.Count} arguements");
         return listArgs.ToArray();
     }
 
@@ -67,7 +68,7 @@ public static class ArguementParser
 
     static arguementOption? ParseTextFile(Queue<string> args)
     {
-        if (!FitFolderArgs(args.Peek())) return null;
+        if (!FitTextFileArgs(args.Peek())) return null;
 
         args.Dequeue();
 
@@ -106,7 +107,7 @@ public static class ArguementParser
         => arg == "-f";
 
     static bool FitTextFileArgs(string arg)
-        => arg == "-p";
+        => arg == "-t";
 
     static bool FitOutputArgs(string arg)
         => arg == "-o";

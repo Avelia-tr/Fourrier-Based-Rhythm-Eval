@@ -34,7 +34,7 @@ public static class FourrierRhythmApp
 
         foreach (var res in flatResult)
         {
-            Console.WriteLine($"rating : {res.rhythm} | ID : {res.info.OnlineID} | bpm : {res.info.BPM} | Name : {res.info.Metadata.Title} - {res.info.DifficultyName}");
+            Console.WriteLine($"rating : {res.rhythm} | ID : {res.info.OnlineID} | Name : {res.info.Metadata.Title} - {res.info.DifficultyName}");
         }
 
         if (outputFile is not null) WriteResultToFile(outputFile, flatResult);
