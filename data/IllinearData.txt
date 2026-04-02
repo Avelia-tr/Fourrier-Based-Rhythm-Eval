@@ -1,0 +1,400 @@
+rating : 5.5386461357619373E-14 |ID : 5423181| Name : Presenter* (Cut Ver.) - Merry Christmas!!
+rating : 5.591697584851455E-14 |ID : -1| Name : Snow Goose - Sharon's
+rating : 5.894407583838425E-14 |ID : 5416769| Name : Christmas Slop - Reform's Extreme+
+rating : 5.949703189032755E-14 |ID : 3875572| Name : Ena - Insane
+rating : 6.961559926649914E-14 |ID : 4905829| Name : Time to Say Goodbye (TV Size) - Nymphe's Extreme
+rating : 6.967647903165534E-14 |ID : 5416768| Name : Christmas Slop - Ram's Ultra
+rating : 7.172346752380491E-14 |ID : 4994500| Name : Prismatix - kowari's Extreme
+rating : 7.350309216501665E-14 |ID : 2405863| Name : Judgment Day Has Come - Celestial Judgment
+rating : 7.427799088122768E-14 |ID : 5038991| Name : Stop Saying We Sound Like Dragonforce - Not Roupus' Legend
+rating : 7.502368936343241E-14 |ID : 4913599| Name : Time to Say Goodbye (TV Size) - Plasma's Extreme
+rating : 7.617231791399441E-14 |ID : 5416771| Name : Christmas Slop - Sloppy Gift
+rating : 7.62503020108265E-14 |ID : 4876550| Name : Time to Say Goodbye (TV Size) - PikA's Extreme
+rating : 7.638219528947405E-14 |ID : 4900284| Name : Time to Say Goodbye (TV Size) - Kuki's Extreme
+rating : 7.740688397648993E-14 |ID : 5181606| Name : Sidetracked Day - mizto's Extra
+rating : 7.761274131869826E-14 |ID : 4924798| Name : Time to Say Goodbye (TV Size) - A r M i N's Extreme
+rating : 7.785376533780286E-14 |ID : 4925156| Name : Time to Say Goodbye (TV Size) - Reform's Extreme
+rating : 7.832335649254439E-14 |ID : 4883679| Name : Unstoppable - Gotta Go Fast!!
+rating : 7.980837455076679E-14 |ID : 2924352| Name : FAITH - MOUNTAIN OF FAITH
+rating : 8.07021968995085E-14 |ID : 4874327| Name : Time to Say Goodbye (TV Size) - No Return
+rating : 8.077629034235042E-14 |ID : 5192354| Name : Sidetracked Day - velamy's Hyperactivity
+rating : 8.080804752059985E-14 |ID : 2166045| Name : Gravitation - Reform's Extra
+rating : 8.343126423842746E-14 |ID : 5199299| Name : Sidetracked Day - Expert
+rating : 8.39871168572342E-14 |ID : 4898892| Name : Prismatix - Angelic Beauty
+rating : 8.577171011645556E-14 |ID : 4628575| Name : Snow Goose - Sytho's Extra
+rating : 8.63057584787011E-14 |ID : 5181607| Name : Sidetracked Day - Sh4rq_'s Extra
+rating : 8.687549197968554E-14 |ID : 4638446| Name : Sidetracked Day - Extra (2024)
+rating : 8.757622618846195E-14 |ID : 5211120| Name : Sidetracked Day - PixelGlory's Elegy
+rating : 8.831186233973482E-14 |ID : 4551189| Name : Snow Goose - nebuwua's Hibernal Embrace
+rating : 8.996624460733682E-14 |ID : 4667123| Name : Sidetracked Day - evth's Inside Extreme
+rating : 9.28966214284239E-14 |ID : 5206807| Name : Sidetracked Day - Distraction
+rating : 9.379968335530385E-14 |ID : 5341644| Name : Sidetracked Day - Fatfan's Squarestream Extreme
+rating : 9.510533790880695E-14 |ID : 5192351| Name : Sidetracked Day - Astronic's Extreme
+rating : 9.539597712160426E-14 |ID : 4704022| Name : Age of Tyranny - shoyeu's Extra
+rating : 9.664094945156898E-14 |ID : 5186857| Name : Sidetracked Day - -Tynamo's Infinity & Beyond
+rating : 9.72312776817632E-14 |ID : 5206808| Name : Sidetracked Day - Maaadbot's Sidetracked Week
+rating : 1.0042680992182554E-13 |ID : 5521635| Name : Motto, Nee Motto (TV Size) - Fanservice
+rating : 1.3018093303028202E-13 |ID : -1| Name : Chousai Kenbo Sengen - Insane
+rating : 1.9497295678907154E-13 |ID : 3533716| Name : Suikyou HEAVEN! - !
+rating : 1.1840815238351453E-12 |ID : 2833172| Name : Ascension to Heaven - BoshyMan's Extra
+rating : 1.2501733996710219E-12 |ID : -1| Name : Ascension to Heaven - Death
+rating : 3.2568116302558947E-07 |ID : 658127| Name : Blue Zenith - FOUR DIMENSIONS
+rating : 3.7367759220620706E-06 |ID : 939618| Name : Kakushigoto - Distant Memory
+rating : 7.496015403002168E-06 |ID : 2330357| Name : Colors Power ni Omakasero! - Mitsuboshi Jump!
+rating : 1.0537535044766079E-05 |ID : 4960484| Name : A little bit - Tenderness
+rating : 2.6790367542346743E-05 |ID : 634351| Name : Identity Part III - SHD
+rating : 3.470268683762861E-05 |ID : 2075268| Name : Space Battle - Intense
+rating : 3.527582219661836E-05 |ID : 5416765| Name : Christmas Slop - Nymphe's Ultra+
+rating : 0.00011556098656902088 |ID : 5186856| Name : Sidetracked Day - shoyeu's Extra
+rating : 0.0001245114422685341 |ID : 1457925| Name : Battle Against a True Hero - Genocide
+rating : 0.0001787449158840679 |ID : 4791387| Name : Song That Might Play When You Fight Sans - Genocide
+rating : 0.000236221383039908 |ID : 1514105| Name : Are You Ready To Fall Into Falls & Fall Of Tears - Tears Will Become Melodies Tonight
+rating : 0.00025117922779071265 |ID : -1| Name : Answer - Insane
+rating : 0.0002773574374621721 |ID : 2277700| Name : Midorigo Queen Bee - Dada's Insane
+rating : 0.00028829693245277656 |ID : 5097762| Name : Temptation (feat. Rebecca) (Nightcore Mix) - Parad0xa & -AzuMi's Extreme
+rating : 0.0002886859516757912 |ID : 3352257| Name : Madoi no Tsuki / RAYTO MIX - Mind Reader
+rating : 0.0003575632655781109 |ID : 4726119| Name : L9 - Extreme
+rating : 0.0003817019909237375 |ID : 4967007| Name : Temptation (feat. Rebecca) (Nightcore Mix) - Tylerderp's Extreme
+rating : 0.00040563491779436545 |ID : 2206544| Name : Midorigo Queen Bee - Collapse
+rating : 0.0004117142766430423 |ID : 5240114| Name : Silver Orbit - LMT's Insane
+rating : 0.000445101917039113 |ID : 1778268| Name : Wing my Way - Endless Sky
+rating : 0.00047959938981466073 |ID : 5002973| Name : adrenaline!!! (TV Size) - Nii-san
+rating : 0.0005445132634934553 |ID : 2389623| Name : Not For Sale Fossil - Frail
+rating : 0.0005796236376240403 |ID : 1724319| Name : Anoneanoneanoneanoneanoneanoneanoneanone Kouji ga Okureteruno - Anone
+rating : 0.0005851762741076393 |ID : 5240469| Name : Wing my Way (Game Ver.) - Path of Hope
+rating : 0.0005959121080104794 |ID : 5027876| Name : Sweets Holic (Cut Ver.) - Lemaire's Ex
+rating : 0.0006465004047306068 |ID : 2185824| Name : SANTA SAN - 1-2-SANTA
+rating : 0.0006508293662371299 |ID : 5049011| Name : Sweets Holic (Cut Ver.) - Kumocha's Extreme
+rating : 0.0006843244526647765 |ID : 1371599| Name : Umiyuri Kaiteitan - Kaitei
+rating : 0.0006949243871013775 |ID : 4896590| Name : Crystalia - Plasma's Extreme
+rating : 0.0007029225965230033 |ID : 901854| Name : Sendan Life - Nostalgia
+rating : 0.0007410152804117869 |ID : 4883677| Name : Crystalia - SB's Extreme
+rating : 0.0007698959068796789 |ID : 2118444| Name : Bass Slut (Original Mix) - Taeyang's Trashy Extreme
+rating : 0.0007910942979410161 |ID : 4788529| Name : Break Free - The Moment of Happiness and Comfort
+rating : 0.0008326951433216726 |ID : 3357329| Name : Live Beyond!! - Let's Live, Smile, Run, and Shout!!
+rating : 0.0008338616089011748 |ID : 1907933| Name : FREEDOM DiVE [METAL DIMENSIONS] - Extra
+rating : 0.0009121439774696378 |ID : 1475722| Name : Crystalia - Meal's Ultra
+rating : 0.0009230045274934257 |ID : 1319547| Name : Re:TrymenT - A Dream
+rating : 0.0009475167073327362 |ID : 5109853| Name : Humiliation Supreme - Extra
+rating : 0.0009771680251588002 |ID : 4857997| Name : Zetsubou plantation (Cut Ver.) - Reform's Extra
+rating : 0.0010183741809378043 |ID : 5119288| Name : Humiliation Supreme - Extreme
+rating : 0.001061140036945566 |ID : 5043510| Name : Kyouki Chinden (TV Size) - Ultra
+rating : 0.0010691565104217113 |ID : 5329312| Name : Humiliation Supreme - Dignity
+rating : 0.0010754142490887438 |ID : 5426129| Name : Pacific girls - jumpstream
+rating : 0.0010944464261351944 |ID : 2403946| Name : Heart no Shuchou - Kowari's Confession
+rating : 0.0011212787988851228 |ID : 4787962| Name : Towa no Kizuna feat. Another Infinity - Lunatic
+rating : 0.0011375789085669445 |ID : 4867167| Name : R U 4 Me? (Cut Ver.) - i feel so far from the people who are nearest
+rating : 0.0011400191044581868 |ID : 5211222| Name : Power of the Dragonflame - shoyeu's Expert
+rating : 0.0011490546542857628 |ID : 2486881| Name : Sunglow - Harmony
+rating : 0.0011563717414572498 |ID : 4913905| Name : El Mismo Sol (Cut Ver.) - Sunshine
+rating : 0.001162997094099311 |ID : 4852493| Name : Sentou! Battle Tower - Nymphe's Extreme
+rating : 0.0011638714321462343 |ID : 2643619| Name : Meiji Juushichi-nen no Shanghai Alice - Extra
+rating : 0.0011721521696152221 |ID : 4415585| Name : Brazil - Plasma's Extra
+rating : 0.0011975069262158706 |ID : -1| Name : Identity Part 4 - Insane
+rating : 0.0012057547816313899 |ID : 3322444| Name : CRASH!! (Let's Do It) - CRASH!!
+rating : 0.0012601152566601179 |ID : 675734| Name : Valley of the Damned - Apocalypse
+rating : 0.0012727138594903727 |ID : 4791385| Name : Song That Might Play When You Fight Sans - browiec's Extreme
+rating : 0.0012882650430956488 |ID : 2067859| Name : No Good Magia (Start the Witch) - Walpurgisnacht
+rating : 0.0013045702745105743 |ID : 4445719| Name : Sunglow - Radiant
+rating : 0.0013272054234860894 |ID : 5364895| Name : Mind Craft - Start from Here!
+rating : 0.0013876522775433061 |ID : 1036841| Name : New World - Nightmare
+rating : 0.0013976859183382475 |ID : 1909554| Name : Walk This Way! - Extreme
+rating : 0.0014030167289310108 |ID : 4839949| Name : Zetsubou plantation (Cut Ver.) - Not DT Farmer's Extra
+rating : 0.001404600234702902 |ID : 4886597| Name : Age of Tyranny - PixelGlory's Extreme
+rating : 0.001404600234702902 |ID : 4886597| Name : Age of Tyranny - PixelGlory's Extreme
+rating : 0.0014094028984943763 |ID : 5098651| Name : ANTIDOTE - SMOKE'S ANTIDOTE
+rating : 0.001420152563388633 |ID : 5064356| Name : WINTER ARC (CUT VER.) - WRATH
+rating : 0.0014520169667394194 |ID : 1029562| Name : Inferno - Tortured Soul Extra
+rating : 0.001457562062231015 |ID : 1909555| Name : Walk This Way! - Ultra
+rating : 0.001470980406224794 |ID : 2083422| Name : Mloda krew - Cold and Young Blood
+rating : 0.0014788338090471166 |ID : 4425486| Name : slishkom pozdno - deprived of your presence I regress into nothingness
+rating : 0.0014835203200068191 |ID : 4852491| Name : Sentou! Battle Tower - Challenge!
+rating : 0.0014838842695392184 |ID : 5440133| Name : Pacific girls - handstream
+rating : 0.0014999112134016584 |ID : 4852494| Name : Sentou! Battle Tower - Plasma's Extreme
+rating : 0.0015267988556130977 |ID : 4855807| Name : Sentou! Battle Tower - Fiery's Extreme
+rating : 0.0015551170082880774 |ID : 4864435| Name : It's a Monster House! - Sotarks' Warp Trap
+rating : 0.0015683415374778452 |ID : 4500445| Name : Darkish - Lunatic
+rating : 0.0015689172811656667 |ID : 4829379| Name : Zetsubou plantation (Cut Ver.) - Extreme
+rating : 0.0016334404905037003 |ID : -1| Name : Yami ~ Shoujo no Yume , Kyomu no Sekai ~ - Extra
+rating : 0.0016411548616351334 |ID : 4914437| Name : R U 4 Me? (Cut Ver.) - Together Forever
+rating : 0.0016523466863936852 |ID : 4810017| Name : Zetsubou plantation (Cut Ver.) - Kuki's Extreme
+rating : 0.0016606273332410667 |ID : 2328679| Name : ChuChu Lovely MuniMuni MuraMura PrinPrin Boron Nururu ReroRero (Chiptune Cover) - Malding Bunny
+rating : 0.0016834030039294305 |ID : 4786514| Name : Zetsubou plantation (Cut Ver.) - Despair
+rating : 0.0016937359409783656 |ID : 1241370| Name : HONESTY - DISHONEST
+rating : 0.0017120976627107401 |ID : 2684033| Name : Dear Brave - Valor
+rating : 0.0017353553618893835 |ID : 4793476| Name : Zetsubou plantation (Cut Ver.) - PikA's Extra
+rating : 0.0017415576688522977 |ID : 816600| Name : Blade Dance - Kneesocks
+rating : 0.0017556210537191385 |ID : 1227359| Name : polygon - Bonzi's Ultra
+rating : 0.0017861346219267822 |ID : 4926909| Name : Title Screen - Ultra
+rating : 0.0017868946544673467 |ID : 4792613| Name : Zetsubou plantation (Cut Ver.) - -AzuMi's Extreme
+rating : 0.001806002061877613 |ID : 4775095| Name : Spider Dance - Plasma's Genocide
+rating : 0.0018374753182060337 |ID : 4232907| Name : Ningensikkaku - Astronic x -Tynamo's Extra
+rating : 0.0019152193178122333 |ID : 1889232| Name : FREEDOM DiVE [METAL DIMENSIONS] - METAL DIMENSIONS
+rating : 0.0019590612220809706 |ID : 4641263| Name : Blue Goose - Sytho's Expert
+rating : 0.0019664386527136362 |ID : 4921872| Name : Title Screen - The Game of Video Quick Draw
+rating : 0.001993834217876816 |ID : 4000950| Name : Valley of the Vale - Nymphuwua's Expert Collab
+rating : 0.001995832538390588 |ID : 2162263| Name : Yuuga ni Sakase, Sumizome no Sakura ~ The Harm of Coming into Existence - Extra Stage
+rating : 0.0021059465092098466 |ID : 5357401| Name : BPM210 no Shanghai Alice (Instrumental) - FIR'S EXTRA
+rating : 0.0021101458124886054 |ID : 5080973| Name : look at me tenderly - (>///<)
+rating : 0.002151314353433911 |ID : 4852514| Name : Kuusou Mesorogiwi (TV Size) - Decree
+rating : 0.002168797715115411 |ID : 4808501| Name : Zetsubou plantation (Cut Ver.) - Plasma's Extreme
+rating : 0.0021700058549362247 |ID : 3148305| Name : Felis - Future
+rating : 0.0021892516547595024 |ID : 804164| Name : MONSTER - FOREVER
+rating : 0.002190929575275971 |ID : 5457470| Name : clarity rmx (hayakou bootleg) (cut ver.) - hayakou's bootleg
+rating : 0.002205949783826131 |ID : 898576| Name : BLUE DRAGON - Kyshiro's Extra
+rating : 0.002214145888346857 |ID : 1045757| Name : Kimi no Kioku (Aethral Remix) - Remembrance
+rating : 0.0022186846796738414 |ID : 4482142| Name : Gensou wa Hakanaki Watashi no Tame ni -Shinroku- - Phantasm
+rating : 0.0022488554673817354 |ID : 5124997| Name : Oroka na Ketsumatsu - Ideology
+rating : 0.002253870376459046 |ID : 1510461| Name : Manimani - Yamazakura
+rating : 0.002285317066421332 |ID : 2863215| Name : Kimi no Shiranai Monogatari - Starry Night Sky
+rating : 0.0023210817409343313 |ID : 4462888| Name : EXISTENCE - SKIBIDI KOISHI
+rating : 0.0023316662011974706 |ID : 5298466| Name : hopeless quiet - dixaway & wavewy's expert
+rating : 0.002354446805790093 |ID : 2079597| Name : HONESTY - RIGHTEOUSNESS OF MORALITY
+rating : 0.002354446805790093 |ID : 2079597| Name : HONESTY - RIGHTEOUSNESS OF MORALITY
+rating : 0.002374809042963764 |ID : 198428| Name : meme - ExtrA
+rating : 0.0024514074940238605 |ID : 5258382| Name : Power of the Dragonflame - Uri's Extreme
+rating : 0.0024616736037298735 |ID : 4459494| Name : Blue Goose - Extra
+rating : 0.0024977785637176064 |ID : 1258642| Name : Sunglow - Melody
+rating : 0.0025265415224355508 |ID : 1025530| Name : nightfall - Skyloft
+rating : 0.0025391277267833696 |ID : 4511021| Name : Ascension to Heaven - Climax
+rating : 0.002713757401065559 |ID : 2111505| Name : Sidetracked Day - Sojourn Collab
+rating : 0.002713757401065559 |ID : 2111505| Name : Sidetracked Day - Sojourn Collab
+rating : 0.0027544308496200375 |ID : 1613687| Name : Sidetracked Day (Short Ver.) - Distracted
+rating : 0.0028219164575798545 |ID : 2309955| Name : Mr. Kill Myself - Darkness
+rating : 0.002824462621360841 |ID : 4746232| Name : Sidetracked Day - Distraction
+rating : 0.0029208508248276584 |ID : 260489| Name : The Near Distant Future - Lapse
+rating : 0.002977411742716197 |ID : 5067912| Name : First Storm (KonranP's Japanese Ver.) - kowari's mikumiku
+rating : 0.003059748304650184 |ID : 3436822| Name : Halloween Party - Nightmare
+rating : 0.003106483676489124 |ID : 5065131| Name : Valley of the Damned - Breaking Skies
+rating : 0.0031573078403921936 |ID : 644971| Name : MariannE - Collab
+rating : 0.0032146837959270494 |ID : 1872396| Name : Tsukinami - Nostalgia
+rating : 0.0032747174750174957 |ID : 5093443| Name : Valour Against All Odds - Nightmare
+rating : 0.0033807234292671543 |ID : 5216115| Name : Valour Against All Odds - Tylerderp's Extreme
+rating : 0.003403728083042098 |ID : -1| Name : Nyanyanyanyanyanyanya! - Collab
+rating : 0.003519986804938839 |ID : 2187179| Name : Haruoto*Veil - Expert
+rating : 0.003537512884140959 |ID : 1636104| Name : Euphorium - The Dream Of White Star.
+rating : 0.0035521063787611927 |ID : 4944784| Name : Sidetracked Day (Short Ver.) - Nlxus's Extreme
+rating : 0.0035898259082388843 |ID : 2235779| Name : Haruoto*Veil - Koe
+rating : 0.003648253304733614 |ID : 5062956| Name : Thine King Weeps for Mercy - Astronic's Extra
+rating : 0.003691507423499058 |ID : 5367904| Name : BPM210 no Shanghai Alice (Instrumental) - DICECREAM'S EXTREME
+rating : 0.003897798968876039 |ID : 1662095| Name : The Ballad of a Mindless Girl - Expert
+rating : 0.0039025885747836276 |ID : 807074| Name : Ascension to Heaven - Final Moment
+rating : 0.003908518230948539 |ID : 1598696| Name : crystallized - Infinity
+rating : 0.003933788378520928 |ID : 2632230| Name : Nagareboshi - Starlight
+rating : 0.003949723975893129 |ID : 1754777| Name : Sidetracked Day - Infinity Inside
+rating : 0.004014812107253806 |ID : 4943355| Name : Sidetracked Day (Short Ver.) - Lost
+rating : 0.004017301341072343 |ID : -1| Name : Daisuke - Another
+rating : 0.004035853783445098 |ID : 3884886| Name : All I Want For Christmas Is Snow Halation - All I Want For Christmas Is A Cursed Gift
+rating : 0.0040565411244922606 |ID : -1| Name : Running in the 90's - Insane
+rating : 0.004133216958725866 |ID : 1621319| Name : Sidetracked Day (Short Ver.) - Deflected Journey
+rating : 0.004170176823175415 |ID : 5491486| Name : Red Anthem -separate- - Lunatic
+rating : 0.0042007035743060524 |ID : 2993974| Name : Stella-rium (Asterisk MAKINA Remix) - Starlight
+rating : 0.00421771536368162 |ID : 3666536| Name : Glory Days - AnedeuwuAAa's Extreme Collab
+rating : 0.004227411104974473 |ID : -1| Name : Made of Fire - Oni
+rating : 0.004247704946275245 |ID : 3630575| Name : Euphorium - White Star
+rating : 0.004249360256684313 |ID : 3385971| Name : My Heart Will Go On - Titanic
+rating : 0.004249360256684313 |ID : 3385971| Name : My Heart Will Go On - Titanic
+rating : 0.0043025211738763215 |ID : 1906778| Name : Izayoi Sakura - Pata-Mon's Expert
+rating : 0.004308885576919022 |ID : 2962941| Name : U - Affection
+rating : 0.004352004490302516 |ID : 4978112| Name : Sidetracked Day (Short Ver.) - Astronic's Extreme
+rating : 0.004394958243435577 |ID : 5132508| Name : The Frozen Land - Preserved Anguish
+rating : 0.004400009617925308 |ID : 710881| Name : Wings (Nu:Logic Remix) - Freedom
+rating : 0.0044151139719134 |ID : 2654458| Name : Frozen - Everything Will Freeze
+rating : 0.004460221193230817 |ID : 5061151| Name : Green Greens - Mekadon's Super Ability
+rating : 0.004489578604945208 |ID : 2241492| Name : Dreams come true -Hana Sakihokoru, Chikyuu no Moto de- - Snowfall
+rating : 0.004508950963411923 |ID : 882897| Name : Abracadavre - Insane
+rating : 0.004530395287295682 |ID : 5187401| Name : Xeno Phantasm - mizto's Extra
+rating : 0.004532149142216131 |ID : 5141310| Name : Sidetracked Day (Short Ver.) - -Tynamo's Resolution
+rating : 0.0045998137737297586 |ID : 3108140| Name : Cecilie - Your fair skin is being marred by the gashing wounds
+rating : 0.004624263580960763 |ID : 2222880| Name : The Skin Thief - Murder
+rating : 0.004641226698593852 |ID : 4722416| Name : Sentou de Pinch! - LOW HEALTH EXTRA!
+rating : 0.004743233257625127 |ID : 5068889| Name : Thine King Weeps for Mercy - h6zy's Extreme
+rating : 0.004819322790201838 |ID : 988793| Name : SLoWMoTIoN - LoLIS
+rating : 0.0048421896966394165 |ID : 1587275| Name : Spider Dance - Kyshiro's Genocide
+rating : 0.0048441647578437224 |ID : 3967160| Name : 10 Things I Hate About Ai no Sukima - 2 - Years Of Your Beatmaps I Can't Undo
+rating : 0.004902016187736563 |ID : 3962022| Name : 10 Things I Hate About Ai no Sukima - 1 - I Hate The Fact You Made Sytho Map Too
+rating : 0.004955776525943314 |ID : 5063213| Name : Tamashii no Katari ni Michibikarete - allein's Lunatic
+rating : 0.00496107014082034 |ID : 855536| Name : As the wind blows - Storm
+rating : 0.005103183355703772 |ID : 1725588| Name : 5150 - Sotarks' Cataclysm
+rating : 0.005199424749990261 |ID : 722934| Name : Dream Walker - Ethereal
+rating : 0.0052394115945049655 |ID : 876685| Name : EOS (kamome sano rmx) - Stardust
+rating : 0.005276595004242746 |ID : 5236530| Name : Eu Li Na Biblia (Sped Up & Cut Ver.) - Dance, dance, dance
+rating : 0.005294708871730645 |ID : 1768904| Name : Monster Effect - Extreme
+rating : 0.005457704177581691 |ID : 687303| Name : Epiphany (feat. Veela) - Revelation
+rating : 0.005465239787794517 |ID : 2096921| Name : Corona - OTO's Extra
+rating : 0.005476417826650753 |ID : 2358414| Name : Destruction - Extreme
+rating : 0.005531782407695901 |ID : 5275552| Name : Infernus Ad Astra / Rise Of The Chaos Wizards - tacoyaki5's Legend
+rating : 0.005617031611432696 |ID : 4343206| Name : over the top - uri's extra
+rating : 0.005628676839295276 |ID : 2025393| Name : DREAM SOLISTER - Fortissimo
+rating : 0.005643872905708087 |ID : 3907769| Name : Non-breath oblige - allein's no slider extra
+rating : 0.005726558668761261 |ID : 2719431| Name : Hijitsuzaikei Joshitachi wa Dou Surya Ii Desu ka? - Insane
+rating : 0.0058329138879020664 |ID : 1082403| Name : Tokei no Heya to Seishin Sekai - Horologe
+rating : 0.005870201140820707 |ID : 3481011| Name : (^3^)chu * Dere * Rhapsody - (^3^)
+rating : 0.005894191653119237 |ID : 786018| Name : Night of Knights - Guy's Extra
+rating : 0.005976182340031653 |ID : 3893986| Name : As the wind blows - Kyouren x Ascended's Extra
+rating : 0.00607847657504689 |ID : 4715827| Name : Bang Bang - Luscent's Extreme
+rating : 0.006244232488508545 |ID : -1| Name : rog-unlimitation - AngelHoney
+rating : 0.006262010799619102 |ID : 5377422| Name : BPM210 no Shanghai Alice (Instrumental) - HYPERPIGEON'S EXTRA
+rating : 0.006521610090351684 |ID : 1682373| Name : Rap God - Tap God
+rating : 0.006525171183694648 |ID : 3798824| Name : LOVE BOMB - Heart
+rating : 0.006529707698157245 |ID : 4708805| Name : Bang Bang - Plasma's Expert
+rating : 0.006602477873771721 |ID : 3963421| Name : 10 Things I Hate About Ai no Sukima - Mommy's Radiance
+rating : 0.006638726769461756 |ID : 3536514| Name : Marie-Luise - I hope we can always smile together like this...
+rating : 0.006882224269729072 |ID : 1770368| Name : ReI - Rain
+rating : 0.0069716396973399175 |ID : 4713808| Name : Bang Bang - Raijodo's Extreme
+rating : 0.007072656084302493 |ID : 2651771| Name : Put curse on you - Malediction
+rating : 0.007194296854711575 |ID : 1754659| Name : Yakata Mawari - Rebirth
+rating : 0.007244725114215643 |ID : 3105129| Name : HERA (LONG Version) - Parthenos
+rating : 0.007346261593223505 |ID : 3632759| Name : Wings of Freedom - Alis Libertatis
+rating : 0.007407428081554096 |ID : 4731665| Name : 3y3s - -Tynamo's Extra
+rating : 0.00753172843984675 |ID : 4381212| Name : Sentou de Pinch! - -Tynamo's Extra
+rating : 0.007674740071195908 |ID : 4724034| Name : Unwelcome School - Sotarks' Classroom Disorder
+rating : 0.008038906070141714 |ID : 5389812| Name : Jashin no Konrei, Gi wa Ai to Shiru. - Our Shared Lament
+rating : 0.008347061512415049 |ID : 5082120| Name : Nyarlathotep's Dreamland - Memory Infinity
+rating : 0.008399506230365913 |ID : -1| Name : EkiBEN2000 - Insane
+rating : 0.008621617271569609 |ID : 776951| Name : Night of Knights - The World
+rating : 0.008833517552281504 |ID : 914237| Name : RUN!RUN!RUN! - Water Board
+rating : 0.00889022221548002 |ID : 3881559| Name : Epitaph - Elegy
+rating : 0.009002187739075051 |ID : 4572837| Name : Necrofantasia ~ Remix - Youkai of Boundaries
+rating : 0.009121010707046961 |ID : 4647289| Name : Aragami (Short Ver.) - Transcend
+rating : 0.009255281651632152 |ID : 4934522| Name : Aragami (Short Ver.) - sytho's Extra
+rating : 0.0093139225700014 |ID : -1| Name : Night of Knights - DJPop's Extra Stage
+rating : 0.009692916621882767 |ID : 4975644| Name : Higan Kikou ~ View of The River Styx - Extra Stage
+rating : 0.010014509070576726 |ID : 4720294| Name : Aragami (Short Ver.) - Wilderness
+rating : 0.010356581632946872 |ID : 5108662| Name : Hishin Matara ~ Four seasons where Starless disappeared. - Extra Stage
+rating : 0.011008706175247095 |ID : 5145068| Name : NNRT - Extra
+rating : 0.011074139601820103 |ID : 1672204| Name : Pure Furies ~ Vengeance is Mine - Extra Stage
+rating : 0.01111503278922852 |ID : 4894158| Name : Higan Kikou ~ View of The River Styx - River Mist: Distance Becomes Strange
+rating : 0.011817313743692836 |ID : 4787837| Name : NE PLACH' - uri's extra
+rating : 0.011898558026538887 |ID : 3675267| Name : Azul Remix - IOException's Extreme
+rating : 0.012396575363462142 |ID : 4700151| Name : NE PLACH' - sh4rq_'s extreme
+rating : 0.012482822520619427 |ID : 5134784| Name : NNRT - Extreme
+rating : 0.012709052210864021 |ID : 1682749| Name : 02: Amber Wishes - Happy Birthday!
+rating : 0.013191401964271533 |ID : 5496736| Name : Hell Above (Cut Ver.) - Wasteland
+rating : 0.01329018512539638 |ID : 1645523| Name : Seijouki no Pierrot ~ The MadPiero Laughs - Stage 5
+rating : 0.013746796629289081 |ID : 1695382| Name : Mou Ii kai? - Rain
+rating : 0.013746796629289081 |ID : 1695382| Name : Mou Ii kai? - Rain
+rating : 0.0138492807564489 |ID : 3403124| Name : Asteroid Field of DECAPLETS - X
+rating : 0.013979396628225591 |ID : 351752| Name : Higan Kikou ~ View of The River Styx - Extra Stage
+rating : 0.014267914877164542 |ID : 3825223| Name : Endroll - Girl with an Acoustic Guitar and Birds and Bubbles
+rating : 0.01461303523945103 |ID : -1| Name : FREEDOM DiVE - FOUR DIMENSIONS
+rating : 0.015574493750330298 |ID : 4907863| Name : Symphony of a Dying Star - Sh4rglory's Extra
+rating : 0.016671595789177422 |ID : 3333700| Name : beepbit * futures - fast * forward
+rating : 0.016802200606966397 |ID : 3131107| Name : Elements & Tale of Fire - Descendants of Flame
+rating : 0.017946212750444005 |ID : 5225100| Name : A Voice In The Dark - Redemption
+rating : 0.019388138693430097 |ID : 2935781| Name : KIZUNA MUSIC - Trust
+rating : 0.01942970057958148 |ID : 3632720| Name : Kimi to no Asu o Negau kara - We are all MILLION!!
+rating : 0.020202553077573723 |ID : 3178933| Name : Swampwitch - Wrath of the Witch
+rating : 0.021082479422657723 |ID : 3645144| Name : Arkadia - Fighting on the Road of Arkadia's Tragic Tale
+rating : 0.021466151501333772 |ID : 3310074| Name : Infernus Ad Astra / Rise Of The Chaos Wizards - 1992: The Astral Age of Triton and Zargothrax
+rating : 0.022073837448156313 |ID : 2628691| Name : One In A Billion - Fantasy
+rating : 0.022521186570548177 |ID : 1936713| Name : Believe in ourselves - Our Everlasting Love
+rating : 0.02441367710249272 |ID : 1377957| Name : Victims of Contingency - Remorse
+rating : 0.025387167298309265 |ID : 4860513| Name : Polar 240 - Blizzard
+rating : 0.02576024054770771 |ID : 2274002| Name : Soundscape - Kowari's Expert
+rating : 0.025962203909682548 |ID : 757003| Name : Guilty All The Same (feat. Rakim) - K.I.A.
+rating : 0.0263485478562867 |ID : 2231774| Name : Finest Sky - Kowari's Extra
+rating : 0.026412237234199297 |ID : 1555034| Name : Gensou Roman Kikou (is the limit.) - Extra
+rating : 0.026677650866548427 |ID : 4337667| Name : over the top - expert
+rating : 0.02897943704618332 |ID : 4763600| Name : Inai Sekai - Extreme
+rating : 0.02979454919312268 |ID : 3884667| Name : Guitar to Kodoku to Aoi Hoshi - Akitoshi's Extreme
+rating : 0.0320642935868939 |ID : 1922693| Name : Tank! - Bang!
+rating : 0.03440134190264717 |ID : 4892236| Name : Ange du Blanc Pur - BMD's Absolution
+rating : 0.03536547093482582 |ID : 3465034| Name : Arkadia - Atarashii Mirai
+rating : 0.035815293171878836 |ID : 1383876| Name : miragecoordinator - Perversion
+rating : 0.03640922089694355 |ID : 4874839| Name : Sei Juuji Gakuen - Resolute
+rating : 0.038067490376668595 |ID : 2249015| Name : Exile of the Floating World - Gabdu09's Extra
+rating : 0.038353003104881156 |ID : 3644487| Name : Arkadia - Extreme
+rating : 0.03894687878925182 |ID : 3085497| Name : Aegleseeker - captin's deliverance
+rating : 0.04419501329897209 |ID : 2536882| Name : Pudding Funfair - EXTRA
+rating : 0.04832281844656465 |ID : 2036903| Name : Hide And Seek - Expert
+rating : 0.05115093098601398 |ID : 4905088| Name : SKILLAWAKE - Ultimate
+rating : 0.05258372543633669 |ID : 3745820| Name : Brazil - Atomic Scope
+rating : 0.05873303582030213 |ID : 1861487| Name : Euphoria - Ultimate Power
+rating : 0.06368647708923784 |ID : 2594991| Name : DICE - INSANE.
+rating : 0.06848658373930021 |ID : 4862035| Name : MEGALOMANIA - KK'S EXTREME
+rating : 0.06849517714840421 |ID : 1391631| Name : Seijouki no Pierrot ~ The MadPiero Laughs - Extra Stage
+rating : 0.0715334235587088 |ID : 4408537| Name : Flyers!!! - Fly High!!!
+rating : 0.07267910355726452 |ID : 2315558| Name : Stella-rium - Celestial
+rating : 0.0775670891955105 |ID : 3871989| Name : Vicinity Of Obscenity - Isomir's Extreme
+rating : 0.0782892584970912 |ID : 2659369| Name : Juvenile - Extra
+rating : 0.07847063739608032 |ID : 2063931| Name : Space Invaders - Evgerable's Ultimate Massacre
+rating : 0.0822204979268343 |ID : 1170505| Name : Uta - Redemption
+rating : 0.08465498882648116 |ID : 2796473| Name : Star light, Star bright (TV Size) - Destiny
+rating : 0.0914162547909026 |ID : 2844649| Name : Oshama Scramble! (IOException Edit) - Special
+rating : 0.09231870014513116 |ID : 1655981| Name : Black Rover (TV Size) - Extreme
+rating : 0.09388800961404585 |ID : 1360649| Name : ChRoNiClESeVeN feat. Annabel - Insane
+rating : 0.09613543997749655 |ID : 4867605| Name : RuLe - ByE
+rating : 0.09625607073953779 |ID : 2659368| Name : Juvenile - Ataraxis
+rating : 0.09627809337183979 |ID : 217651| Name : Kakuzetsu Thanatos - Pokie
+rating : 0.09688938746357449 |ID : 3239862| Name : black bullet - extinction
+rating : 0.10890508511798877 |ID : 1031991| Name : Yomi yori Kikoyu, Koukoku no Tou to Honoo no Shoujo. - Kyouaku
+rating : 0.10995888652933325 |ID : 2874408| Name : Chronostasis - A Brilliant Petal Frozen in an Everlasting Moment
+rating : 0.11468474933979828 |ID : 2646355| Name : Kaikai Kitan - Extra
+rating : 0.11569931343731549 |ID : 1995061| Name : Packet Hero - Sotarks' Yowasa
+rating : 0.11746934473274384 |ID : 5500905| Name : Sakura no Zenya (Nightcore Mix) - Mutual Promise
+rating : 0.1312559302237672 |ID : 1185036| Name : Inai Sekai - Regret
+rating : 0.13989968922466595 |ID : 2911355| Name : Tsuioku no Kuroki Makenshi - Determined
+rating : 0.1410694838490003 |ID : 321559| Name : Hiroari Shoots a Strange Bird - Extra
+rating : 0.14502348154822295 |ID : 3719000| Name : yamisame - imsame
+rating : 0.14527456809361577 |ID : 2069969| Name : Rat Race - TheMefisto's EXTRA
+rating : 0.17510261637589938 |ID : 1603957| Name : Mabu - Extreme
+rating : 0.1759887771908511 |ID : -1| Name : Toukasa Funtouki!~ Rakutoferin no Hate e ~ - Lunatic
+rating : 0.18667549122348026 |ID : 5047712| Name : Songs Compilation VI - Collab Extra
+rating : 0.18852631248208618 |ID : 5047713| Name : Songs Compilation VI - Marathon
+rating : 0.18862120227029994 |ID : 4702508| Name : Amethyst Aurora - Knight's Extra
+rating : 0.19180482450334957 |ID : 1529189| Name : Painters of the Tempest (Part II): Triptych Lux - Reveries from the Stained Glass Womb
+rating : 0.22146827000436337 |ID : 2590221| Name : Doro no Bunzai de Watashi dake no Taisetsu o Ubaouda nante - Shallowness
+rating : 0.24694501648574785 |ID : 1554502| Name : Songs Compilation - Marathon
+rating : 0.25280483597812553 |ID : 1123155| Name : Juubaku - E-Xtra
+rating : 0.2569377027915868 |ID : 1711326| Name : Owari Tsumugishi Mono - Lasse's Extra
+rating : 0.2636292432166204 |ID : 4470172| Name : dorchadas - htonrahS
+rating : 0.26823500496236335 |ID : 2229834| Name : SOLID STATE SQUAD - CONDUCTOR
+rating : 0.27892785523793867 |ID : 880321| Name : Packet Hero - Ruthless
+rating : 0.29714959099783234 |ID : 2643849| Name : dreamenddischarger - Liquidation
+rating : 0.30020609908893164 |ID : 356030| Name : Masquerade - Extra
+rating : 0.30127217319947835 |ID : 3533093| Name : Identity Series Nonstop Play (part. 1~5) - Marathon
+rating : 0.32637187068325796 |ID : 1853276| Name : Garyou Tensei - Oni
+rating : 0.3543550443044673 |ID : 2708983| Name : Playing with Ruby - Extreme
+rating : 0.3559821868588424 |ID : 4646545| Name : Void Act - Memento
+rating : 0.3597712391218767 |ID : 2110306| Name : JULIAN - LA PROMESSE
+rating : 0.36234483111358173 |ID : 2240526| Name : Anoyo-iki no Bus ni Notte Saraba. - Yandere
+rating : 0.37770313598258465 |ID : 4736035| Name : Violet SunLight - Extra
+rating : 0.37902808681036926 |ID : 3045622| Name : Taking you out - Akitoshi's Extreme
+rating : 0.40248480780453816 |ID : 3282546| Name : Aru Tsuioku, Bouchou Uchuu ni Okeru Shinkai Sunawachi Suiten - Deep Sea
+rating : 0.41017628181674487 |ID : 4789197| Name : Motto, Nee Motto (TV Size) - Extra
+rating : 0.42800202550987493 |ID : 4545563| Name : Violet SunLight - Another
+rating : 0.49342292930006754 |ID : 1849580| Name : Songs Compilation - I Won't Say "Farewell"; Someday, We'll Meet Again
+rating : 0.4986360436325399 |ID : 2011390| Name : Natsuirozaka - moph's Extreme
+rating : 0.5055926205181358 |ID : 339640| Name : Smoke Tower - Trauma
+rating : 0.5840863529661353 |ID : 3613816| Name : eth ken - lethal dance
+rating : 0.642567030647942 |ID : 1788628| Name : 1HOPE SNIPER - Resolve
+rating : 0.6434463259379575 |ID : 803828| Name : Reign of Fear - VI
+rating : 0.6853983954414884 |ID : 861180| Name : March of War / Axe of Judgement - Relentless Brutality
+rating : 0.7058533050578131 |ID : 2701095| Name : Top of the "M" - Yakuman
+rating : 0.7656986572534669 |ID : 4698324| Name : Reign of Fear - VII
+rating : 0.7755306362344484 |ID : 2234808| Name : Tokoyo Omohikane no Kami - Expert
+rating : 0.9819597464302579 |ID : 1939637| Name : Hartmann no Youkai Shoujo ~ Todestrieb und Lebenstrieb - GoldenWolf's Thanatos kai Eros
+rating : 0.9837943110153893 |ID : 1980295| Name : Methods - Expert
+rating : 1.0000120577849732 |ID : 1772897| Name : Crocus - Extra
+rating : 1.0122296351877558 |ID : 2719326| Name : SPUTNIK-3 - Beyond OWC
+rating : 1.3984502618670116 |ID : 2417422| Name : Koigokoro - Special
+rating : 1.6937151600523954 |ID : 1001682| Name : Through the Fire and Flames - Myth
+rating : 1.8341812485422049 |ID : 4630407| Name : Bike Chase - Plasma's Extra
+rating : 1.837592466163075 |ID : 655794| Name : T-T-Techno (feat. Jesskah) - Technonationalism
+rating : 2.28356417046135 |ID : 2328042| Name : King Sandybutt's Tomb - E      X      P      E      R      T
+rating : 2.500968361443495 |ID : 3440631| Name : Ekoro - DeviousPanda's Extravaganza
+rating : 2.5920185975318253 |ID : 3235170| Name : Life is beautiful - DeviousPanda's Extravaganza
+rating : 3.247560680449948 |ID : 1626385| Name : Jikininki - MKL's Another
+rating : 3.306520405242775 |ID : 1676603| Name : Yokuatsu Sakuran Girl - Insane
+rating : 3.375022227540815 |ID : 2992943| Name : Gateways - Undertaker
+rating : 3.4093397471094407 |ID : -1| Name : U.N. Owen was Her? - DJPop's Insane
+rating : 3.520590168177522 |ID : 1985735| Name : Truths, Ironies, The Secret Lyrics - Don't Stop 'Cause This Party's All We've Got
+rating : 3.673181217258637 |ID : 2633856| Name : Touhou Kijinretsu - Extra Stage
+rating : 3.782645343344007 |ID : 2631202| Name : Alt Futur - Expert
+rating : 3.9310394504445947 |ID : -1| Name : Gensou Kidan (Kaguyahime+Mikotonori Ver.) - Lunatic
+rating : 4.289331895853797 |ID : 5421091| Name : Braking Down - Melancholic
+rating : 4.4821507549111805 |ID : 1811527| Name : Save Me - Nightmare
+rating : 4.540781080478103 |ID : 5246964| Name : Angel Of Darkness (Video Mix) (Nightcore Mix) - Ultra
+rating : 4.574981698274235 |ID : 1256809| Name : Save Me - Tragedy
+rating : 4.574981698274235 |ID : 1256809| Name : Save Me - Tragedy
