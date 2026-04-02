@@ -13,3 +13,50 @@ obj/
 # End of https://www.toptal.com/developers/gitignore/api/dotnetcore
 
 api_key
+
+### Universal ###
+# Common files that should be ignored in all projects
+
+# Logs
+*.log
+# Temporary files
+*.tmp
+*~
+
+*.bak
+# Environment files (containing secrets, API keys, credentials)
+.env
+*.env
+.env.*
+
+# Local configuration that shouldn't be shared
+*.local
+
+### Rider ###
+# rider editor specific files
+
+# Rider
+.idea/
+*.iws
+*.iml
+*.ipr
+
+.idea_modules/
+out/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+.idea/.idea.*
+.idea/indexLayout.xml
+.idea/contentModel.xml
+.idea/modules.xml
+.idea/rider.project.restore.info
+
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+.idea/shelf/
+.idea/config/
+
+riderModule.iml
