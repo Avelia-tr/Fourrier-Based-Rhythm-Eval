@@ -1,13 +1,9 @@
 ﻿using System;
 
 using osu.Game.Rulesets.Osu;
-using osu.Game.Rulesets.Osu.Beatmaps;
-using osu.Game.Beatmaps;
 
 using ScottPlot;
 
-using FourrierRhythm.Evaluator;
-using FourrierRhythm.Math;
 
 namespace FourrierRhythm;
 

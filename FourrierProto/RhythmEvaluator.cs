@@ -2,7 +2,7 @@ using osu.Game.Beatmaps;
 using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Scoring;
-using FourrierRhythm.Math;
+using FourrierRhythm.FMath;
 
 using MilliSeconds = double;
 using ProbabilityOfHit = double;

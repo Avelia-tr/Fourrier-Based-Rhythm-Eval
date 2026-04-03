@@ -1,131 +1,224 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
 using osu.Game.Beatmaps;
 using osu.Game.Rulesets.Osu.Objects;
 using osu.Game.Rulesets.Objects;
 using osu.Game.Rulesets.Scoring;
-using System.Numerics;
 
 namespace FourrierRhythm.Evaluator;
 
 public class MishaEvaluator
 {
-
-    IBeatmap map;
-    double medianTimeDist;
+    IBeatmap _map;
+    double _globalMode; // kept for backward compatibility, not used in windowed evaluation
+    int WS = 9; // window size
 
     public MishaEvaluator(IBeatmap pSubject)
     {
-        map = pSubject;
+        _map = pSubject;
+        var hitObjects = _map.HitObjects;
 
-        var hit_objects = map.HitObjects;
+        var deltas = hitObjects
+                     .Skip(1)
+                     .Select((x, y) => Math.Round(GetDeltas(hitObjects[y], x)))
+                     .ToList();
 
-        var deltas = GetDeltas(hit_objects);
-
-        var mode_estimation = GetModeKDE(deltas, 40);
-
-        var trueMedian = GetPercentile(deltas, 0.5);
-
-        medianTimeDist = double.Min(mode_estimation, trueMedian);
-    }
-
-    public double Evaluate(int IntegralSampleRate)
-    {
-        var times = map.HitObjects.Select(h => h.StartTime).ToArray();
-        double sum = 0.0;
-
-        for (int n = 1; n < times.Length; n++)           // n > m
+        _globalMode = deltas
+                      .Where(d => d != 0)
+                      .GroupBy(d => d)
+        .Select(g => new
         {
-            for (int m = 0; m < n; m++)                 // m < n
-            {
-                double delta_t = times[n] - times[m];
-                double timeDecay = double.Exp(-(delta_t / medianTimeDist) * (delta_t / medianTimeDist) / 2);
-                double add = (double.Sin(2 * MathF.PI * delta_t / medianTimeDist) / delta_t) * timeDecay;
-                add *= add;
-                sum += add;
-            }
-        }
+            Value = g.Key,
+            Count = g.Count()
+        })
+        .GroupBy(x => x.Count)
+        .OrderByDescending(g => g.Key)
+        .First()
+        .OrderByDescending(x => x.Value)
+        .First()
+        .Value;
+    } //global mode calculation, doesn't affect everything right now
 
-        sum = sum * (medianTimeDist * medianTimeDist / map.HitObjects.Count) * 10;
-
-        return sum;
-    }
-
-    public double[] EvaluateAllNotes(double historyLength)
+    public double GetDeltas(HitObject from, HitObject to)
     {
-        var deltas = GetDeltas(map.HitObjects);
-        var times = map.HitObjects.Select(h => h.StartTime).ToArray().AsSpan();
-
-        double[] results = new double[times.Length - 1];
-
-        for (int i = 1; i < times.Length; i++)
-        {
-            var indexStart = GetRange(times, times[i] - historyLength);
-
-            var modeLocal = GetMode(deltas.Skip(indexStart).Take(i - indexStart));
-
-            results[i - 1] = PerNoteEvaluator(times.Slice(indexStart, i), modeLocal);
-        }
-
-        return results;
-    }
-
-    public double GetMode(IEnumerable<double> times)
-        => double.Min(GetModeKDE(times, 40), GetPercentile(times, 0.5));
-
-    public double PerNoteEvaluator(ReadOnlySpan<double> hitObjects, double medianTimeDist)
-    {
-        double sum = 0.0;
-
-        for (int n = 1; n < hitObjects.Length; n++)           // n > m
-        {
-            for (int m = 0; m < n; m++)                 // m < n
-            {
-                double delta_t = hitObjects[n] - hitObjects[m];
-                double timeDecay = double.Exp(-(delta_t / medianTimeDist) * (delta_t / medianTimeDist) / 2);
-                double add = (double.Sin(2 * MathF.PI * delta_t / medianTimeDist) / delta_t) * timeDecay;
-                add *= add;
-                sum += add;
-            }
-        }
-
-        sum = sum * (medianTimeDist * medianTimeDist / hitObjects.Length) * 10;
-
-        return sum;
-    }
-
-    private int GetRange(ReadOnlySpan<double> times, double after)
-    {
-        for (int i = 0; i < times.Length; i++)
-        {
-            if (times[i] > after) return i;
-        }
-
-        return times.Length;
-    }
-
-    private double GetDelta(HitObject from, HitObject to)
-    {
-        if (from is Slider from_slider)
-            return to.StartTime - from_slider.EndTime;
+        if (from is Slider fromSlider)
+            return to.StartTime - fromSlider.EndTime;
         return to.StartTime - from.StartTime;
     }
 
-    private IEnumerable<double> GetDeltas(IEnumerable<HitObject> hitObjects)
-        => hitObjects
-            .Skip(1)
-            .Select((x, y) => GetDelta(hitObjects.ElementAt(y), x));
 
-
-    private double GetPercentile(IEnumerable<double> hitObject, double percentile)
-        => hitObject
-            .Order()
-            .ElementAt((int)(hitObject.Count() * percentile));
-
-    private double GetModeKDE(IEnumerable<double> hitObject, double strength)
+    public double Evaluate(int integralSampleRate)
     {
-        var deltas = hitObject.ToArray();
-        Func<double, double> kernelling =
-            x => deltas.Sum(y => Math.MathUtils.NormalDistribution(x, y, strength)) / hitObject.Count();
+        double[] windowComplexities = EvaluateSlidingWindows(WS);
+        double[] windowCorrections = CorrectionSlidingWindows(WS);
 
-        return deltas.MaxBy(kernelling);
+        double totalComplexity = windowComplexities.Sum() * windowCorrections.Sum();
+
+        totalComplexity = (totalComplexity / _map.HitObjects.Count) / 10;
+        totalComplexity = Math.Pow(totalComplexity, 0.5);
+        totalComplexity = Math.Round(totalComplexity * 100) / 100;
+
+        return totalComplexity;
     }
+
+    public double[] EvaluateSlidingWindows(int windowSize)
+    {
+        var hitObjects = _map.HitObjects;
+        if (hitObjects.Count < windowSize)
+            return Array.Empty<double>();
+
+        var results = new List<double>();
+
+        for (int start = 0; start <= hitObjects.Count - windowSize; start++)
+        {
+            var window = hitObjects.Skip(start).Take(windowSize).ToList();
+            double mode = ComputeModeForWindow(window);
+            double MinDist = ComputeMinDistForWindow(window);
+            double complexity = ComputeComplexityForWindow(window, mode, MinDist);
+            results.Add(complexity);
+        }
+
+        return results.ToArray();
+    } // Computes ComplexityEval for each sliding window of consecutive hit objects.
+
+    public double[] CorrectionSlidingWindows(int windowSize)
+    {
+        var hitObjects = _map.HitObjects;
+        if (hitObjects.Count < windowSize)
+            return Array.Empty<double>();
+
+        var results = new List<double>();
+
+        for (int start = 0; start <= hitObjects.Count - windowSize; start++)
+        {
+            var window = hitObjects.Skip(start).Take(windowSize).ToList();
+            double mode = ComputeModeForWindow(window);
+            double MinDist = ComputeMinDistForWindow(window);
+            double correction = ComputeCorrectionForWindow(window, mode, MinDist);
+            results.Add(correction);
+        }
+
+        return results.ToArray();
+    }
+
+    private double ComputeModeForWindow(IList<HitObject> window)
+    {
+        if (window.Count < 2)
+            return 1.0; // fallback, should not happen for windowSize >= 2
+
+        var deltas = new List<double>();
+        for (int i = 0; i < window.Count - 1; i++)
+        {
+            double delta = Math.Round(GetDeltas(window[i], window[i + 1]));
+            if (delta != 0)
+                deltas.Add(delta);
+        }
+
+        if (deltas.Count == 0) return 1.0; // fallback if all deltas are zero
+
+        var mode = deltas
+                   .GroupBy(d => d)
+        .Select(g => new { Value = g.Key, Count = g.Count() })
+        .GroupBy(x => x.Count)
+        .OrderByDescending(g => g.Key)
+        .First()
+        .OrderByDescending(x => x.Value)
+        .First()
+        .Value;
+
+        return mode;
+    } // Computes the mode (most frequent non-zero delta) for a list of hit objects, choosing the biggest mode.
+
+    private double ComputeMinDistForWindow(IList<HitObject> window)
+    {
+        if (window.Count < 2) return 1.0; // fallback, should not happen for windowSize >= 2
+
+        var deltas = new List<double>();
+
+        for (int i = 0; i < window.Count - 1; i++)
+        {
+            double delta = Math.Round(GetDeltas(window[i], window[i + 1]));
+
+            if (delta != 0) deltas.Add(delta);
+        }
+
+        if (deltas.Count == 0) return 1.0; // fallback if all deltas are zero
+
+        var MinDist = deltas.Min();
+
+        return MinDist;
+    } // Computes minimal non-zero time-dist in window
+
+    private double ComputeComplexityForWindow(IList<HitObject> window, double mode, double MinDist)
+    {
+        int count = window.Count;
+        var times = window.Select(h => h.StartTime).ToArray();
+        double complexity = 0.0;
+
+        for (int n = 2; n < count - 1; n++)
+        {
+            for (int m = 1; m < n; m++)
+            {
+                double ratioToMode = Math.Round(times[n] - times[m]) / mode;
+                double ratioToMin = Math.Round(times[n] - times[m]) / MinDist;
+
+                double ratioPrevious = (times[m] - times[m - 1]) / (times[n] - times[m]);
+                double ratioNext = (times[n + 1] - times[n]) / (times[n] - times[m]);
+
+                ratioPrevious *= ratioPrevious;
+                ratioNext *= ratioNext;
+
+                double isolation = 7.27 * Math.Exp(-ratioPrevious * ratioNext); // WYSI
+
+                double add = BaseEval(ratioToMode, ratioToMin, 2);
+                complexity += Math.Pow(add, 0.5) * isolation; //artifical isolation of patterns
+            }
+        }
+        double timeDecayCoef = (times[count - 1] - times[0]) / (WS * mode); // making contribution from big windows smaller
+        timeDecayCoef *= timeDecayCoef;
+        complexity = complexity * Math.Exp(-timeDecayCoef);
+
+        return complexity;
+    } // Computes the ComplexityEval for a single window using its mode.
+
+    private double ComputeCorrectionForWindow(IList<HitObject> window, double mode, double MinDist)
+    {
+        int count = window.Count;
+        var times = window.Select(h => h.StartTime).ToArray();
+        double complexity = 0.0;
+
+        for (int n = 2; n < count - 1; n++)
+        {
+            for (int m = 1; m < n; m++)
+            {
+                double ratio = Math.Round(times[n] - times[m]) / mode;
+                double ratio2 = Math.Round(times[n] - times[m]) / MinDist;
+
+                double add = BaseEval(ratio, ratio2, 2);
+                complexity += Math.Pow(add, 1);
+            }
+        }
+        double timeDecayCoef = (times[count - 1] - times[0]) / (WS * mode); // making contribution from big windows smaller
+        timeDecayCoef *= timeDecayCoef;
+        complexity = complexity * Math.Exp(-timeDecayCoef);
+
+        return complexity;
+    }
+
+    public double BaseEval(double x, double y, double a)
+        => Math.Abs(Math.Sin(a * MathF.PI * x) / (a * MathF.PI * x));
+
+    /* public double sigmoid(double a, double x)
+	{
+	    return 1/(1 + Math.Exp(-a*x));
+	} // sigmoid function, nothing to say about it
+
+	public double nerf(double a, double x, double z_1, double z_2, double b)
+	{
+	    double arg = Math.Pow(2*(x-(z_2+z_1)/2)/(z_2-z_1),2.0);
+	    arg = Math.Exp(-arg*(1-sigmoid(a, x - z_1)*sigmoid(-a, x - z_2)));
+	    return (1 - b *(1- arg));
+	} // it's basically a smooth implementation of (1-step function between z_2 > z_1), provided a > 0 */
 }
