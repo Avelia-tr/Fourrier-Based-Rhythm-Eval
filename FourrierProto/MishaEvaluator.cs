@@ -18,9 +18,11 @@ public class MishaEvaluator
 
         var hit_objects = map.HitObjects;
 
-        var mode_estimation = GetModeKDE(map.HitObjects, 40);
+        var deltas = GetDeltas(hit_objects);
 
-        var trueMedian = GetPercentile(map.HitObjects, 0.5);
+        var mode_estimation = GetModeKDE(deltas, 40);
+
+        var trueMedian = GetPercentile(deltas, 0.5);
 
         medianTimeDist = double.Min(mode_estimation, trueMedian);
     }
@@ -44,14 +46,30 @@ public class MishaEvaluator
 
         sum = sum * (medianTimeDist * medianTimeDist / map.HitObjects.Count) * 10;
 
-
         return sum;
     }
 
     public double[] EvaluateAllNotes(double historyLength)
     {
-        throw new NotImplementedException();
+        var deltas = GetDeltas(map.HitObjects);
+        var times = map.HitObjects.Select(h => h.StartTime).ToArray().AsSpan();
+
+        double[] results = new double[times.Length - 1];
+
+        for (int i = 1; i < times.Length; i++)
+        {
+            var indexStart = GetRange(times, times[i] - historyLength);
+
+            var modeLocal = GetMode(deltas.Skip(indexStart).Take(i - indexStart));
+
+            results[i - 1] = PerNoteEvaluator(times.Slice(indexStart, i), modeLocal);
+        }
+
+        return results;
     }
+
+    public double GetMode(IEnumerable<double> times)
+        => double.Min(GetModeKDE(times, 40), GetPercentile(times, 0.5));
 
     public double PerNoteEvaluator(ReadOnlySpan<double> hitObjects, double medianTimeDist)
     {
@@ -71,8 +89,17 @@ public class MishaEvaluator
 
         sum = sum * (medianTimeDist * medianTimeDist / hitObjects.Length) * 10;
 
-
         return sum;
+    }
+
+    private int GetRange(ReadOnlySpan<double> times, double after)
+    {
+        for (int i = 0; i < times.Length; i++)
+        {
+            if (times[i] > after) return i;
+        }
+
+        return times.Length;
     }
 
     private double GetDelta(HitObject from, HitObject to)
@@ -88,14 +115,14 @@ public class MishaEvaluator
             .Select((x, y) => GetDelta(hitObjects.ElementAt(y), x));
 
 
-    private double GetPercentile(IEnumerable<HitObject> hitObject, double percentile)
-        => GetDeltas(hitObject)
+    private double GetPercentile(IEnumerable<double> hitObject, double percentile)
+        => hitObject
             .Order()
             .ElementAt((int)(hitObject.Count() * percentile));
 
-    private double GetModeKDE(IEnumerable<HitObject> hitObject, double strength)
+    private double GetModeKDE(IEnumerable<double> hitObject, double strength)
     {
-        var deltas = GetDeltas(hitObject).ToArray();
+        var deltas = hitObject.ToArray();
         Func<double, double> kernelling =
             x => deltas.Sum(y => Math.MathUtils.NormalDistribution(x, y, strength)) / hitObject.Count();
 
