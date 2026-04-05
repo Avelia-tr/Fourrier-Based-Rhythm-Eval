@@ -54,6 +54,7 @@ public static class FourrierRhythmApp
             PlayerOption player => await ProcessPlayerOption(player),
             TextFileOption file => await ProcessTextFileOption(file),
             FolderOption folder => await ProcessFolderOption(folder),
+            TextFileMapSetOption file => await ProcessTextFileMapSetOption(file),
             SetUpOption => new MapResult[0] { },
             OutputOption => new MapResult[0] { },
             _ => throw new NotImplementedException(),
@@ -108,6 +109,22 @@ public static class FourrierRhythmApp
         }
 
         return results.ToArray();
+    }
+
+    static async Task<MapResult[]> ProcessTextFileMapSetOption(TextFileMapSetOption file)
+    {
+        var lines = File.ReadLines(file.FileName);
+
+        var results = new List<MapResult[]>();
+
+        foreach (var id in lines)
+        {
+            await Task.Delay(100);
+            var map = await ProcessOptionMapSet(new(int.Parse(id)));
+            results.Add(map);
+        }
+
+        return results.SelectMany(x => x).ToArray();
     }
 
     static async Task<MapResult[]> ProcessLocalOption(FolderOption file)

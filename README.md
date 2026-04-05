@@ -18,8 +18,10 @@ you need to set up the api via -s to use anything fecthing maps dynamically
     outputs every score in a player top plays ranked by complexity
  -f folder
     compute the rating for every map in a folder
- -p text_file
-    parse a file and outputs every 
+ -t text_file
+    parse a file and outputs the result of every maps following id 
+ -t text_file
+    parse a file and outputs the result of every mapset following their id
  -o output_name
     output place if not precised nothing will be saved
 

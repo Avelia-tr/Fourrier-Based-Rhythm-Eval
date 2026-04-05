@@ -17,6 +17,7 @@ public static class ArguementParser
             ApplyParser(ParseFolder, argQueue, listArgs);
             ApplyParser(ParsePlayer, argQueue, listArgs);
             ApplyParser(ParseTextFile, argQueue, listArgs);
+            ApplyParser(ParseTextFileMapSet, argQueue, listArgs);
             ApplyParser(ParseOutput, argQueue, listArgs);
 
             if (!argQueue.Any()) break;
@@ -76,6 +77,16 @@ public static class ArguementParser
         return new TextFileOption(args.Dequeue());
     }
 
+    static arguementOption? ParseTextFileMapSet(Queue<string> args)
+    {
+        if (!FitTextFileMapSetArgs(args.Peek())) return null;
+
+        args.Dequeue();
+
+        // maybe verify if the folder exist ? nahhh
+        return new TextFileMapSetOption(args.Dequeue());
+    }
+
     static arguementOption? ParseOutput(Queue<string> args)
     {
         if (!FitOutputArgs(args.Peek())) return null;
@@ -109,6 +120,9 @@ public static class ArguementParser
     static bool FitTextFileArgs(string arg)
         => arg == "-t";
 
+    static bool FitTextFileMapSetArgs(string arg)
+        => arg == "-tm";
+
     static bool FitOutputArgs(string arg)
         => arg == "-o";
 
@@ -127,6 +141,7 @@ public record MapOption(int MapId) : arguementOption;
 public record MapSetOption(int MapSetId) : arguementOption;
 public record FolderOption(string FolderName) : arguementOption;
 public record TextFileOption(string FileName) : arguementOption;
+public record TextFileMapSetOption(string FileName) : arguementOption;
 public record OutputOption(string FolderName) : arguementOption;
 
 
